@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+
+<!-- Run For Loop for All Posts in the Database -->
+<div class = "blogpost">
+          <div class="animate__animated animate__fadeIn animate_slower">
+          <h2 class="display-4 fst-italic">
+            {Blog Post Title}
+          </h2>
+          <i> {Author} on {Date of Writing} </i>
+          <!-- Author -->
+          <!-- Date -->
+          <p class="lead my-4" style = "font-size: 18px">
+            {Content} truncated to 200 charactars......
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white fw-bold"
+              ><!-- Button linking to individual page for the post determined by parameters -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Read More...
+              </button></a
+            >
+          </p>
+            <br>
+      </div>
+      </div>
+<!-- Unit Blog Post Ends -->
+
+<%- include("partials/footer") -%>
