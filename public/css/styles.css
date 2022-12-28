@@ -2,6 +2,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+/*=======================
+ Navbar
+=======================*/
 .navbar {
     padding: 20px;
     border: 0;
@@ -10,14 +14,24 @@
     font-size: 12px;
     letter-spacing: 1px;
 }
+
+/*=======================
+ Navbar content 
+=======================*/
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
 
+/*=======================
+ footer padding
+=======================*/
 .footer-padding {
 	padding-bottom: 60px;
 }
 
+/*=======================
+ footer 
+=======================*/
 .footer {
 	position: fixed;
 	text-align: center;
@@ -27,16 +41,121 @@
 	background-color: #eee;
 }
 
+/*=======================
+ footer content
+=======================*/
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
   color: #332d2d;
 }
 
+/*=======================
+ blogs page
+=======================*/
 .blogpost
 {
   margin: 1.5%;
   padding: 3%;
   text-align: left;
   border-bottom: 1px solid #929aab;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #c4bebe;
+}
+
+/*=======================
+ about-1 - about us card 
+=======================*/
+
+.about-1{
+  margin: 30px 10px 10px 10px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+.about-1 h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-1 p{
+  text-align: center;
+  padding: 3px;
+  color: rgb(0, 0, 0);
+}
+
+/*===========================
+about items - mission, achievements, contact us card
+============================*/
+
+.about-item{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 80px 30px;
+  box-shadow: 0 0 9px rgba(0,0,0.6);
+  border-radius: 10px;
+}
+
+/*======================================
+adding style to the icons(book,globe,pencil)
+=========================================*/
+.about-item i{
+  font-size: 43px;
+  margin: 0;
+}
+
+/*======================================
+adding style to h3(heading 3) of each card
+=========================================*/
+.about-item h3{
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+/*======================================
+styling the hr (the blue line in between)
+=========================================*/
+.about-item hr{
+  width: 46px;
+  height: 3px;
+  background-color: #5fbff9;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+/*========================================
+hover over cards
+=========================================*/
+.about-item:hover{
+  background-color: #112734;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+  color: #fff;
+}
+.about-item:hover hr{
+  background-color: #fff;
+}
+
+/*==============================================================================
+translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+================================================================================*/
+.about-item:hover i{
+  transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+  transition: all 400ms ease-in-out;
 }
